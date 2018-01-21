@@ -6,6 +6,14 @@
             h1 This is a test
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem corporis deserunt ducimus possimus quas quibusdam ratione? Architecto deserunt incidunt necessitatibus, pariatur possimus quam, quibusdam quidem quo reiciendis sapiente totam.
 
+            v-text-field(label="Text", v-model="text")
+
+            hr
+
+            v-btn(@click="show_new_stuff=true") Click Me
+
+            div.lala(v-if="show_new_stuff") New stuff
+
             //transition(:name="transitionName")
             router-view
                     p Nothing to see here
@@ -25,6 +33,8 @@
         data() { return {
             transitionName: '',
             a: { b: { c: 1 }},
+            text: '123',
+            show_new_stuff: false
         }},
 
         created() {

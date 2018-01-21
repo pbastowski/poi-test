@@ -5,26 +5,28 @@
   "main": "index.js",
   "scripts": {
     "dev": "poi --port 3000",
-    "build": "poi build"
+    "build": "poi build",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cypress": "^1.4.1",
     "vue": "2.5.13",
-    "vuex": "3.0.1",
     "vue-router": "3.0.1",
-    "vuetify": "1.0.0-beta.4"
+    "vuetify": "1.0.0-beta.4",
+    "vuex": "3.0.1"
   },
   "devDependencies": {
-    "poi": "9.6.12",
+    "jest": "^22.0.6",
+    "jest-serializer-vue": "0.3.0",
     "node-sass": "4.7.2",
+    "poi": "9.6.12",
     "pug": "2.0.0-rc.4",
     "pug-loader": "2.3.0",
     "sass-loader": "6.0.6",
-    "jest": "22.0.4",
     "vue-jest": "1.4.0",
-    "vue-test-utils": "1.0.0-beta.8",
-    "jest-serializer-vue": "0.3.0"
+    "vue-test-utils": "1.0.0-beta.8"
   }
 }
